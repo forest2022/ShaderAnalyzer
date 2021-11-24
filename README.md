@@ -4,14 +4,9 @@
 
 * [About the Project](#about-the-project)
 * [Graph creation](#Graph-creation)
-  * [Google_bigquery](#Google-bigquery)
-  * [Kaggle](#Kaggle)
-  * [Github](#github)
-//* [Tables Explanation](#Table-Explanation)  
 * [Scripts Explanation](#Scripts-Explanation)
   * [Network Extraction](#Network-Extraction)
   * [Graph Analysis](#Graph-Analysis)
-  * [Community Detection and Prediction](#Community-Detection-and-Prediction)	
 * [Useful linkes](#Useful-linkes)
 * [Reference](#Reference)
 
@@ -20,9 +15,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<!-- Data Extraction -->
-## Data Extraction 
-Due to the size limitation, instead of uploading the dataset, we will introduce the extraction method we are using to obtain the data. We also demonstrate a sample arc list and corresponding address hased table split by year and by month (only for Contract Net) in each folder.
+<!-- Graph creation -->
+## Graph  
+The sample graphs of disassembly shaders can be found in  [Link to the folder](sample_graph/)
 
 
 <!-- Scripts Explanation -->
@@ -30,41 +25,13 @@ Due to the size limitation, instead of uploading the dataset, we will introduce 
 
 All the scripts are written in python 3.8. To run the script, please lunch a python tools like Anaconda or directly run "python xx.py" 
 
-
 ###  Graph Analysis 
-[Link to the folder](Network_extraction/)
-
-The folder contains four folders for transactionNet, traceNet,tokenNet and contractNet arc list and accounts extraction. 
-
-For [transactionNet](Network_extraction/TransactionNet), [traceNet](Network_extraction/TraceNet), [tokenNet](Network_extraction/TokenNet)
- 1. Annual graph 
- 
-    The raw data obtained from Google Bigquery is in annual basis.
-    Scripts named as "tracexx.py","tokenxx.py" and "transactionxx.py" are to process annual-based raw data, form the annual based arc list and corresponding hash table. 
-
- 2. Result
-
-    Due to the file size limitation in github, only Year2015 annual arc list and hash table is uploaded as a reference 
-
-
-For [contractNet](Network_extraction/ContractNet)
-1. Annual graph 
-
-   The raw data obtained from Google Bigquery is in annual basis.
-   Scripts named as "xx_Annual_xx.py" is to process annual-based raw data, form the annual based arc list and corresponding hash table. 
-
-2. Monthly graph 
-
-   Script named as "xx_Monthly_xx.py" will not only form the arc list and hash table but also help to partition the arc list into different month by matching with the timestamp in raw data.
-
-3. Result
-
-   Due to the file size limitation in github, only ContractNet Year2015 annual arc list and hash table is uploaded as a reference in folder "contractNet_address_hash" and "contractNet_edgelist_example".
+[Link to the folder](Graph_analysis/)
 
 
 
 ### Single Game Analysis
-[Link to the folder](Graph_analysis/)
+[Link to the folder](single_game_analysis/)
 
 1. [Evolution of Shader Code Graphs](graph_analysis/networkx_Count_vertex_arc_of_network.py)
 	
@@ -78,15 +45,13 @@ For [contractNet](Network_extraction/ContractNet)
 3. [A Frame's Scene Prediction](graph_analysis/networkx_vertices_degree_distribution.py)
 
    An example to calculate number of degree/indegree/outdegree for each vertex in the network. Input is the network edgelist, Output is a csv with the account and corresponding results.
-   
-   [Find tokenNet top10 degree accounts](graph_analysis/find_tokenNet_degree_top10.py)
 
 	
 ### Intergame Analysis
 
 1. Frequent subgraph result analysis 
-
-
+Frequent subgraph mining utilized the library of gSpan in the link listed in useful link. 
+To list the number of frequent subgraphs obtained and their average number of node and edge, the scripts are in []()
 
 2. Game clustering 
 	
@@ -107,8 +72,6 @@ For [contractNet](Network_extraction/ContractNet)
 
 2. shader efficiency prediction
 
-   [Link to the folder](community_detection_prediction/community_prediction/)
-
     There are 2 steps in community detection
 
    Step1: Dataset preparation
@@ -123,20 +86,16 @@ For [contractNet](Network_extraction/ContractNet)
    Scripts [random_forest_combine_allMonth.py](community_detection_prediction/community_prediction/random_forest_combine_allMonth.py )
     
 
-
-
-
-
-
-
-
 <!-- Useful linkes -->
 ## Useful linkes
-1. [Github ethereum](https://github.com/blockchain-etl/ethereum-etl)
-2. [Google bigquery](https://cloud.google.com/bigquery)
-3. [Kaggle](https://www.kaggle.com/bigquery/ethereum-blockchain)
+1. [gSpan](https://github.com/betterenvi/gSpan)
+2. [RenderDoc](https://renderdoc.org/)
+3. [AMD GPU Toolkit](https://https://gpuopen.com/rga/})
+4. [NVIDIA Shader Disassembly library](https://developer.nvidia.com/shader-disasm)
+5. [Interpretability-GCN](https://github.com/tsKenneth/interpretable-graph-classification)
+
+
 
 <!-- Reference -->
 ## Reference
-1. Evgeny Medvedev and the D5 team, "Ethereum ETL," https://github.com/blockchain-etl/ethereum-etl, 2018.
-2. Ethereum Blockchain, https://www.kaggle.com/bigquery/ethereum-blockchain, 2020
+
