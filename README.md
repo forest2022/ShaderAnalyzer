@@ -5,8 +5,9 @@
 * [About the Project](#about-the-project)
 * [Graph creation](#Graph-creation)
 * [Scripts Explanation](#Scripts-Explanation)
-  * [Network Extraction](#Network-Extraction)
   * [Graph Analysis](#Graph-Analysis)
+  * [Single Game Analysis](#Single-game)
+  * [Intergame Analysis](#Inter-game)
 * [Useful linkes](#Useful-linkes)
 * [Reference](#Reference)
 
@@ -90,7 +91,7 @@ To list the number of frequent subgraphs obtained and their average number of no
 ## Useful linkes
 1. [gSpan](https://github.com/betterenvi/gSpan)
 2. [RenderDoc](https://renderdoc.org/)
-3. [AMD GPU Toolkit](https://https://gpuopen.com/rga/})
+3. [AMD GPU Toolkit](https://gpuopen.com/introducing-radeon-developer-tool-suite/})
 4. [NVIDIA Shader Disassembly library](https://developer.nvidia.com/shader-disasm)
 5. [Interpretability-GCN](https://github.com/tsKenneth/interpretable-graph-classification)
 
