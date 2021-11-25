@@ -37,14 +37,12 @@ An example of WL kernel computation for 2 consecutive frame Scripts:[figure 1](G
 [Link to the folder](Single_Game/)
 
 1. Evolution of Shader Code Graphs
-2. 
    Scripts:[Figue3a](Single_Game/figure3a_barplot_node_FS.py)
 	
 	An example to analyze plot figure 3a.
 	
 
 2. Sudden Change Detection in Frames
-3. 
    Scripts:[Figure 8](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
    
    An example for figure 8
