@@ -29,7 +29,9 @@ All the scripts are written in python 3.8. To run the script, please lunch a pyt
 ###  Graph Analysis 
 [Link to the folder](Graph_Analysis/)
 
+An example of tfidf vectorization computation for 2 consecutive frame [figure 1](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
 
+An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
 
 ### Single Game Analysis
 [Link to the folder](Single_Game/)
@@ -44,16 +46,23 @@ All the scripts are written in python 3.8. To run the script, please lunch a pyt
    An example for figure 8
    
 3. A Frame's Scene Prediction
-   [Merge all graphs in one frame as a disjoint graph](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls)
+   [Merge all graphs in one frame as a disjoint graph](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
 
    An example to merge all graphs in the same frame as one disjoint graph. 
 
 	
 ### Intergame Analysis
+[Link to the folder](Inter_Game/)
 
 1. Frequent subgraph result analysis 
+
 Frequent subgraph mining utilized the library of gSpan in the link listed in useful link. 
-To list the number of frequent subgraphs obtained and their average number of node and edge, the scripts are in [figure12](Inter_Game/boxplot_node_intergame.py)
+
+An example to list the number of frequent subgraphs obtained and their average number of node and edge, the scripts are in [figure12](Inter_Game/boxplot_node_intergame.py)
+
+An example to convert gSpan output text to edgelist and nodelist [conversion](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
+
+An example to select longest distinct subgraphs from gSpan result [select](Inter_Game/select_distinct_subgraph_labelgame.py)
 
 2. Game clustering 
 	
@@ -61,9 +70,7 @@ To list the number of frequent subgraphs obtained and their average number of no
 
     Step1: Dataset preparation 
    
-	[](community_detection_prediction/community_detection/find_contract2019_community_multilevel_realEdgeIndex_3mon.py )
-	
-	Note: python igraph library output communities arc list using index instead of real value of nodes. In order to perform matching in next step, it is needed to attach values (which is annual basis index) to each nodes. 
+
 
     Step2:clustering with PCA feature reduction
     
@@ -78,14 +85,9 @@ To list the number of frequent subgraphs obtained and their average number of no
 
    Step1: Dataset preparation
 
-   Scripts [logistic_regression.py](community_detection_prediction/community_prediction/logistic_regression.py)
-   and [random_forest.py ](community_detection_prediction/community_prediction/random_forest.py )are used for each time period prediction. 
-   The script are generalized, it only requires to input the class 1 and class 0 training features and labels. 
-   There is a random selection function in the script to balance class 1 and class 0. It needs to adjust based input data. 
-
    Step2: Classification 
 
-   Scripts [random_forest_combine_allMonth.py](community_detection_prediction/community_prediction/random_forest_combine_allMonth.py )
+   Scripts [random_forest](Inter_Game/random_forest_crossValidation.py )
     
 
 <!-- Useful linkes -->
