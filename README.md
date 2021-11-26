@@ -48,10 +48,13 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
    An example for figure 8
    
 3. A Frame's Scene Prediction
-   [Merge all graphs in one frame as a disjoint graph](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
+   [Merge all graphs](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
 
    An example to merge all graphs in the same frame as one disjoint graph. 
+   
+   [GCN with interpretability library](https://github.com/tsKenneth/interpretable-graph-classification)
 
+   Make use of the existing libraries for GCN and the result explainability.
 	
 ### Intergame Analysis
 [Link to the folder](Inter_Game/)
@@ -60,11 +63,17 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
 
     Frequent subgraph mining utilized the library of gSpan in the link listed in useful link. 
 
-    An example to list the number of frequent subgraphs obtained and their average number of node and edge: Scripts:[figure12](Inter_Game/boxplot_node_intergame.py)
+    An example to list the number of frequent subgraphs obtained and their average number of node and edge: 
+    
+    Scripts:[figure12](Inter_Game/boxplot_node_intergame.py)
 
-    An example to convert gSpan output text to edgelist and nodelist: Scripts:[conversion](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
+    An example to convert gSpan output text to edgelist and nodelist: 
+    
+    Scripts:[conversion](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
 
-    An example to select longest distinct subgraphs from gSpan result: Scripts: [select](Inter_Game/select_distinct_subgraph_labelgame.py)
+    An example to select longest distinct subgraphs from gSpan result: 
+    
+    Scripts: [select](Inter_Game/select_distinct_subgraph_labelgame.py)
 
 2. Game clustering 
 	
@@ -81,15 +90,15 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
 	This script using Kmenas with PCA feature reduction. The clustering result will be plotted in 3d as table3 figure.  
 
 
-2. shader efficiency prediction
+3. shader efficiency prediction
 
     There are 2 steps in community detection
 
     Step1: Dataset preparation
 
     Step2: Classification 
+	[random_forest](Inter_Game/random_forest_crossValidation.py)
 
-        [random_forest](Inter_Game/random_forest_crossValidation.py )
     
 
 <!-- Useful linkes -->
