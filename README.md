@@ -52,7 +52,8 @@ An example of WL kernel computation for 2 consecutive frame
    An example for figure 8
    
 3. A Frame's Scene Prediction
-   [Merge all graphs](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
+
+   [Prepare dataset (Merge all graphs)](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
 
    An example to merge all graphs in the same frame as one disjoint graph. 
    
