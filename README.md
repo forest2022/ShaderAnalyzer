@@ -80,7 +80,10 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
     There are 2 steps in community detection
 
     Step1: Dataset preparation 
+    
+   	[Find max similarity for each pair of games' fsm](Inter_Game/WL_kernel_inter_game_fsm.py)
    
+  	[Prepare train dataset](Inter_Game/prepare_dataset_clustering.py)
 
 
     Step2:clustering with PCA feature reduction
@@ -96,6 +99,8 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
 
     Step1: Dataset preparation
 
+	[Prepare train dataset](Inter_Game/prepare_dataset_predict_efficiency_select_distinct_hw_used_in_shader.py)
+	
     Step2: Classification 
 	[random_forest](Inter_Game/random_forest_crossValidation.py)
 
