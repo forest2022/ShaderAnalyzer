@@ -29,9 +29,13 @@ All the scripts are written in python 3.8. To run the script, please lunch a pyt
 ###  Graph Analysis 
 [Link to the folder](Graph_Analysis/)
 
-An example of tfidf vectorization computation for 2 consecutive frame [figure 1](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
+An example of tfidf vectorization computation for 2 consecutive frame 
 
-An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
+[figure 1 tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
+
+An example of WL kernel computation for 2 consecutive frame 
+
+[figure 1 WL kernel calculation](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
 
 ### Single Game Analysis
 [Link to the folder](Single_Game/)
