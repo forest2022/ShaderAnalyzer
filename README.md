@@ -41,13 +41,15 @@ An example of WL kernel computation for 2 consecutive frame
 [Link to the folder](Single_Game/)
 
 1. Evolution of Shader Code Graphs
-   [Figue3a](Single_Game/figure3a_barplot_node_FS.py)
+
+   [Figue3a plot](Single_Game/figure3a_barplot_node_FS.py)
 	
 	An example to analyze plot figure 3a.
 	
 
 2. Sudden Change Detection in Frames
-   [Figure 8](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
+
+   [Figure 8 plot](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
    
    An example for figure 8
    
@@ -70,15 +72,15 @@ An example of WL kernel computation for 2 consecutive frame
 
     An example to list the number of frequent subgraphs obtained and their average number of node and edge: 
     
-    Scripts:[figure12](Inter_Game/boxplot_node_intergame.py)
+    Scripts:[figure12 plot](Inter_Game/boxplot_node_intergame.py)
 
     An example to convert gSpan output text to edgelist and nodelist: 
     
-    Scripts:[conversion](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
+    Scripts:[convert gSpan result to graph format](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
 
     An example to select longest distinct subgraphs from gSpan result: 
     
-    Scripts: [select](Inter_Game/select_distinct_subgraph_labelgame.py)
+    Scripts: [select longest patterns from gSpan result ](Inter_Game/select_distinct_subgraph_labelgame.py)
 
 2. Game clustering 
 	
@@ -86,7 +88,7 @@ An example of WL kernel computation for 2 consecutive frame
 
     Step1: Dataset preparation 
     
-   	[Find max similarity for each pair of games' fsm](Inter_Game/WL_kernel_inter_game_fsm.py)
+	[Find max similarity for each pair of games' fsm](Inter_Game/WL_kernel_inter_game_fsm.py)
    
   	[Prepare train dataset](Inter_Game/prepare_dataset_clustering.py)
 
