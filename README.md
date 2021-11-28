@@ -101,7 +101,8 @@ An example of WL kernel computation for 2 consecutive frame [figure 1](Graph_Ana
 
 	[Prepare train dataset](Inter_Game/prepare_dataset_predict_efficiency_select_distinct_hw_used_in_shader.py)
 	
-    Step2: Classification 
+    Step2: Classification  
+    
 	[random_forest](Inter_Game/random_forest_crossValidation.py)
 
     
