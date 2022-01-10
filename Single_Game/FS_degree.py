@@ -48,37 +48,3 @@ for idx in range(510, 3125, 10):
                     
                     writer.writerow([fnum.split('_')[1].split('f')[1], shadertype.split('_')[1], nodrow[0],nodrow[1], x ])
                     writer1.writerow([fnum.split('_')[1].split('f')[1], shadertype.split('_')[1], nodrow[0],nodrow[1], gindegree , goutdegree])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#fnum_list = []
-#fnum_list1 = []
-#graph_label = []
-#graph_pre = []
-#
-#for each in edgelist: 
-#    fnum_list1.append(int(each.split('_')[0].split('f')[1]))
-#    
-#df_node = pd.DataFrame(list(zip(fnum_list1, edgelist)), columns=['f','e']) 
-#df_node = df_node.sort_values(by=['f'],ignore_index=True)
-#
-#edgelist1 = df_node['e'].tolist()
-#
-#
-#for edge in edgelist1:
-#    print(f'edge: {edge}')
-#       
-
-        #print(nodrow)
