@@ -82,7 +82,7 @@ Make use of the existing libraries of Graphsage for scalability study
   	[Prepare train dataset](Inter_Game/prepare_dataset_clustering.py)
 
 
-   Step2:clustering with PCA feature reduction. This script using K-Means, GaussianMixture and BIRCH with PCA feature reduction
+   Step2: Clustering with PCA feature reduction. This script using K-Means, GaussianMixture and BIRCH with PCA feature reduction
     
 	[Clutering](Inter_Game/Kmeans_PCA.py)
 	
