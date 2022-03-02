@@ -5,16 +5,17 @@
 * [About the Project](#about-the-project)
 * [Graph creation](#Graph-creation)
 * [Scripts Explanation](#Scripts-Explanation)
-  * [Graph Analysis](#Graph-Analysis)
-  * [Single Game Analysis](#Single-game)
-  * [Intergame Analysis](#Inter-game)
-* [Useful linkes](#Useful-linkes)
+  * [Data Characteristics ](#Graph-Analysis)
+  * [Predicting A Frame's Scene](#Single-game)
+  * [Tuning for A New Application ](#Inter-game)
+* [Useful links](#Useful-linkes)
 * [Reference](#Reference)
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This is a description of the code applied for the experiments described in the paper titled Graph Mining and Machine Learning for Shader Codes Analysis to Assist in GPU’s Performance Improvement by Lin Zhao, Arijit Khan and Robby Luo. 
 
 <!-- Graph creation -->
 ## Graph  
@@ -29,80 +30,66 @@ All the scripts are written in python 3.8. To run the script, please lunch a pyt
 ###  Graph Analysis 
 [Link to the folder](Graph_Analysis/)
 
-An example of tfidf vectorization computation for 2 consecutive frame 
+An example of tfidf vectorization computation for 2 consecutive frames
 
-[figure 1 tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
+[figure 2 tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
 
-An example of WL kernel computation for 2 consecutive frame 
+An example of WL kernel computation for 2 consecutive frames
 
-[figure 1 WL kernel calculation](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
+[figure 2 WL kernel calculation](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
 
-### Single Game Analysis
+
+### Predicting A Frame's Scene
 [Link to the folder](Single_Game/)
 
-1. Evolution of Shader Code Graphs
+An example to merge all graphs in the same frame as one disjoint graph. 
 
-   [Figue3a plot](Single_Game/figure3a_barplot_node_FS.py)
-	
-	An example to analyze plot figure 3a.
-	
+[Prepare dataset (Merge all graphs from one frame)](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
 
-2. Sudden Change Detection in Frames
-
-   [Figure 8 plot](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
+Make use of the existing libraries for GCN and the result explainability.   
    
-   An example for figure 8
-   
-3. A Frame's Scene Prediction
+[GCN with interpretability library](https://github.com/tsKenneth/interpretable-graph-classification)
 
-   [Prepare dataset (Merge all graphs)](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
+Make use of the existing libraries of Graphsage for scalability study
 
-   An example to merge all graphs in the same frame as one disjoint graph. 
-   
-   [GCN with interpretability library](https://github.com/tsKenneth/interpretable-graph-classification)
-
-   Make use of the existing libraries for GCN and the result explainability.
+[Graphsage](https://github.com/diningphil/gnn-comparison)
 	
 ### Intergame Analysis
 [Link to the folder](Inter_Game/)
 
 1. Frequent subgraph result analysis 
 
-    Frequent subgraph mining utilized the library of gSpan in the link listed in useful link. 
+   Frequent subgraph mining utilized the library of gSpan in the link 
+   
+   [gSpan](https://github.com/betterenvi/gSpan) . 
 
-    An example to list the number of frequent subgraphs obtained and their average number of node and edge: 
+   An example to convert gSpan output text to edgelist and nodelist: 
     
-    Scripts:[figure12 plot](Inter_Game/boxplot_node_intergame.py)
+   [Convert gSpan result to graph format](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
 
-    An example to convert gSpan output text to edgelist and nodelist: 
+   An example to select longest distinct subgraphs from gSpan result: 
     
-    Scripts:[convert gSpan result to graph format](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
-
-    An example to select longest distinct subgraphs from gSpan result: 
-    
-    Scripts: [select longest patterns from gSpan result ](Inter_Game/select_distinct_subgraph_labelgame.py)
+   [Select longest patterns from gSpan result ](Inter_Game/select_distinct_subgraph_labelgame.py)
 
 2. Game clustering 
 	
-    There are 2 steps in community detection
+   There are 2 steps for clustering games into groups:
 
-    Step1: Dataset preparation 
+   Step1: Dataset preparation 
     
 	[Find max similarity for each pair of games' fsm](Inter_Game/WL_kernel_inter_game_fsm.py)
    
   	[Prepare train dataset](Inter_Game/prepare_dataset_clustering.py)
 
 
-    Step2:clustering with PCA feature reduction
+   Step2:clustering with PCA feature reduction. This script using K-Means, GaussianMixture and BIRCH with PCA feature reduction
     
-	[Clutering](Inter_Game/3dplot_Kmeans.py)
+	[Clutering](Inter_Game/Kmeans_PCA.py)
 	
-	This script using Kmenas with PCA feature reduction. The clustering result will be plotted in 3d as table3 figure.  
 
+3. Shader efficiency prediction
 
-3. shader efficiency prediction
-
-    There are 2 steps in community detection
+    There are 2 steps in shader subgraphs efficiency prediction 
 
     Step1: Dataset preparation
 
@@ -115,7 +102,7 @@ An example of WL kernel computation for 2 consecutive frame
     
 
 <!-- Useful linkes -->
-## Useful linkes
+## Useful links
 1. [gSpan](https://github.com/betterenvi/gSpan)
 2. [RenderDoc](https://renderdoc.org/)
 3. [AMD GPU Toolkit](https://gpuopen.com/introducing-radeon-developer-tool-suite/})
