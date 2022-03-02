@@ -121,6 +121,7 @@ An example of WL kernel computation for 2 consecutive frame
 3. [AMD GPU Toolkit](https://gpuopen.com/introducing-radeon-developer-tool-suite/})
 4. [NVIDIA Shader Disassembly library](https://developer.nvidia.com/shader-disasm)
 5. [Interpretability-GCN](https://github.com/tsKenneth/interpretable-graph-classification)
+6. [Graphsage](https://github.com/diningphil/gnn-comparison)
 
 
 
