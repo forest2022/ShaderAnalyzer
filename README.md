@@ -15,7 +15,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a description of the code applied for the experiments described in the paper titled Graph Mining and Machine Learning for Shader Codes Analysis to Assist in GPU’s Performance Improvement by Lin Zhao, Arijit Khan and Robby Luo. 
+This is a description of the code applied for the experiments described in the paper titled Graph Mining and Machine Learning for Shader Codes Analysis to Accelerate GPU’s Performance Tuning.
 
 <!-- Graph creation -->
 ## Graph  
