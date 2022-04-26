@@ -32,11 +32,11 @@ All the scripts are written in python 3.8. To run the script, please lunch a pyt
 
 An example of tfidf vectorization computation for 2 consecutive frames:
 
-[figure 2 tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
+[tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
 
 An example of WL kernel computation for 2 consecutive frames
 
-[figure 2 WL kernel calculation](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
+[WL kernel calculation](Graph_Analysis/WL_kernel_2consecutiveFrame_FS.py)
 
 
 ### Predicting A Frame's Scene
