@@ -27,10 +27,10 @@ The sample graphs of disassembly shaders can be found in  [Link to the folder](s
 
 All the scripts are written in python 3.8. To run the script, please lunch a python tools like Anaconda or directly run "python xx.py" 
 
-###  Graph Analysis 
+###  Data Characteristics  
 [Link to the folder](Graph_Analysis/)
 
-An example of tfidf vectorization computation for 2 consecutive frames
+An example of tfidf vectorization computation for 2 consecutive frames:
 
 [figure 2 tfidf-vectorization computation](Graph_Analysis/tfid_vector_2consecutiveFrame_FS.py)
 
@@ -46,7 +46,7 @@ An example to merge all graphs in the same frame as one disjoint graph.
 
 [Prepare dataset (Merge all graphs from one frame)](Single_Game/merge_allgraph_into1_perframe_GTA5_cs_hs_ls.py)
 
-Make use of the existing libraries for GCN and the result explainability.   
+GCN with interpretability library  
    
 [GCN with interpretability library](https://github.com/tsKenneth/interpretable-graph-classification)
 
@@ -67,7 +67,7 @@ Make use of the existing libraries of Graphsage for scalability study
     
    [Convert gSpan result to graph format](Inter_Game/convert_fsm_file_to_edgelist_hash.py)
 
-   An example to select longest distinct subgraphs from gSpan result: 
+   An example to select longest distinct subgraphs from gSpan result. This is to eliminate the smaller subgraphs which are subset of another subgraph:
     
    [Select longest patterns from gSpan result ](Inter_Game/select_distinct_subgraph_labelgame.py)
 
