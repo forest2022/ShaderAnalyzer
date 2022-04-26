@@ -54,7 +54,7 @@ Make use of the existing libraries of Graphsage for scalability study
 
 [Graphsage](https://github.com/diningphil/gnn-comparison)
 	
-### Intergame Analysis
+### Tuning for A New Application
 [Link to the folder](Inter_Game/)
 
 1. Frequent subgraph result analysis 
