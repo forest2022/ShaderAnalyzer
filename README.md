@@ -1,4 +1,4 @@
-# Graph Mining and Machine Learning for Shader Codes Analysis to Accelerate GPU Tuning
+# Identifying Shader Sub-Patterns for GPU Performance Tuning and Architecture Design
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
