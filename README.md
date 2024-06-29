@@ -15,7 +15,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-This is a description of the code applied for the experiments described in the paper titled Graph Mining and Machine Learning for Shader Codes Analysis to Accelerate GPU Tuning. This is a joint work from Lin Zhao (NTU Singapore), Arijit Khan (AAU Denmark), Robby Luo (AMD) and Chai Kiat Yeo (NTU Singapore). This paper has been accepted by The 11th International Conference on Complex Networks and their Applications (Complex Networks 2022).
+This is a description of the code applied for the experiments described in the paper titled Graph Mining and Machine Learning for Shader Codes Analysis to Accelerate GPU Tuning. This is a joint work from Lin Zhao (NTU Singapore), Chai Kiat Yeo (NTU Singapore), Arijit Khan (AAU Denmark), Robby Luo.
 
 <!-- Graph creation -->
 ## Graph  
